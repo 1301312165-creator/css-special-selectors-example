@@ -1,5 +1,5 @@
 li:hover {
-    background-color: yellow;
+    background-color:lightskyblue;
     font-size: 30px;
     cursor: pointer;
 }
@@ -7,4 +7,23 @@ li:hover {
 li:active {
     background-color:crimson;
     font-style: italic;
+}
+
+li::before {
+    content: "☑️"
+}
+
+li:hover::after {
+    content: " Vote For Me!";
+    margin-left: 12px;
+    font-weight: bold;
+    color:lime;
+}
+
+li:active::before {
+    content: "🎭";
+}
+
+ul {
+    list-style: none;
 }
